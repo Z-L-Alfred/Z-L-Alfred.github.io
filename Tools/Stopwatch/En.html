@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Stopwatch</title>
+    <style>
+@font-face {
+  font-family: 'Stopwatch';
+  src: url('/Z-L-Alfred/Z-L-Alfred.github.io/edit/Stopwatch/Stopwatch.ttf');
+}
+span {
+  font-family: 'Stopwatch';
+}
+    </style>
+  </head>
+  <body>
+    <a style="font-size:128px" align="middle">
+      <p style="margin-top:16px;margin-bottom:32px">Stopwatch</p>
+    </a>
+    <hr />
+    <div id="bor" style="margin-top:64px">
+      <span style="font-size:256px" align="middle">
+        <div id="show">00:00:00.0</div>
+      </span>
+      <div id="btnWarp" align="middle">
+        <button id="start" style="font-size:96px;margin-bottom:32px;margin-right:48px">Start</button>
+        <button id="stop" style="font-size:96px;margin-bottom:32px;margin-right:48px">Pause</button>
+        <button id="reset" style="font-size:96px">Reset</button>
+      </div>
+    </div>
+    <script src="./JS.js" />
+  </body>
+</html>
