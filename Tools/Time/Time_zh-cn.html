@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+  </head>
+  <body>
+    <span style="font-size:256px" align="center">
+      <div class="box"></div>
+      <script>
+function getTime() {
+  var date = new Date();
+  var year = date.getFullYear();
+  var month = date.getMonth() + 1;
+  var day = date.getDate();
+  var hour = date.getHours();
+  var minute = date.getMinutes();
+  minute = minute < 10 ? '0' + minute : minute;
+  var seconds = date.getSeconds();
+  seconds = seconds < 10 ? '0' + seconds : seconds;
+  return year + '-' + month + '-' + day + '&#10;' + hour + ':' + minute + ':' + seconds;
+}
+setInterval(function() {
+  document.querySelector('.box').innerHTML = getTime();
+}, 1000)
+       </script>
+     </span>
+   </body>
+</html>
